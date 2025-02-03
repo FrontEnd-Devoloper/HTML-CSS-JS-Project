@@ -1,0 +1,32 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color:#DECDAC;
+  font-family: sans-serif;
+}
+.news-card{
+  width: 400px;
+  height: 200px;
+  position: fixed;
+  inset: 0;
+  margin: auto;
+  border-radius: 32px;
+  background-color: #FEFAF3;
+  box-shadow: 0px 2.81px 2.81px 0px #00000040;
+}
+
+.get-button{
+  text-align: center;
+  margin-top: 68px;
+}
+.get-button button{
+  padding: 18px 24px;
+  font-size: 24px;
+  color: white;
+  border: none;
+  background-color: #EBBF53;
+  border-radius: 32px;
+}
