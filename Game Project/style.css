@@ -1,0 +1,122 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  font-size: 24px;
+  /* background-color: blue; */
+  margin-top: 30px;
+}
+
+.icons-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  border: 1px solid black;
+  padding: 10px;
+  background-color: whitesmoke;
+}
+
+.icons-container span {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+}
+
+.icons-container span:hover {
+  background-color: aliceblue;
+}
+
+.hands {
+  display: flex;
+  justify-content: center;
+  column-gap: 1rem;
+  overflow: hidden;
+}
+
+.hands > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hand-icon {
+  font-size: 12rem;
+  margin-top: -40px;
+}
+
+.computer-score,
+.user-score {
+  display: inline;
+  padding: 10px;
+}
+
+.result {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  color: red;
+  font-size: 30px;
+}
+
+.shakeUserHands {
+  animation: shakeUserHands 0.6s infinite ease-in-out;
+}
+
+.shakeComputerHands {
+  animation: shakeComputerHands 0.5s infinite ease-in-out;
+}
+
+@keyframes shakeUserHands {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(-55deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+
+@keyframes shakeComputerHands {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(55deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+
+@media (max-width: 580px) {
+  body {
+    font-size: 16px;
+  }
+
+  .hand-icon {
+    font-size: 8rem;
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 370px) {
+  .icons-container {
+    gap: 0rem;
+  }
+
+  .hands p {
+    font-size: 14px;
+  }
+
+  .hands {
+    gap: 0;
+  }
+
+  .hand-icon {
+    font-size: 6rem;
+  }
+
+  .result {
+    margin-top: 1rem;
+  }
+}
