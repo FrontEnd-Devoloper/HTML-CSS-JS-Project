@@ -1,0 +1,10 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+input{
+  font-size: 1rem;
+}
