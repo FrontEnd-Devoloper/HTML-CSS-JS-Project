@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz-App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="sript.js" defer></script>
+</head>
+
+<body>
+    <div class="quiz-section">
+        <div class="quiz">
+            <h2 class="quistion" id="question">What is Your Name</h2>
+            <hr>
+             <ul>
+                <li>
+                    <input type="radio" name="answer" class="answer" id="a" />  
+                    <label for="a" id="option-a">quiz Option</label>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <input type="radio" name="answer" class="answer" id="b" />
+                    <label for="b" id="option-b">quiz Option</label>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <input type="radio" name="answer" class="answer" id="c" />
+                    <label for="c" id="option-c">quiz Option</label>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <input type="radio" name="answer" class="answer" id="d" />
+                    <label for="d" id="option-d">quiz Option</label>
+                </li>
+            </ul>
+            <hr>
+            <div onclick="submitQuiz()" type="submit" class="submit">Submit</div>
+            <p class="result"></p>
+        </div>
+    </div>
+
+</body>
+
+</html>

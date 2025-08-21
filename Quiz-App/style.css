@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Quiz Container */
+.quiz-section {
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+}
+
+.quiz {
+  background: #fff;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.quiz h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  text-align: center;
+  color: #333;
+}
+
+/* Options */
+.quiz ul {
+  list-style: none;
+  margin: 10px 0;
+  padding: 0;
+}
+
+.quiz li {
+  margin: 8px 0;
+  background: #f1f1f1;
+  padding: 12px;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.quiz li:hover {
+  background: #e0e0e0;
+}
+
+.quiz input[type="radio"] {
+  margin-right: 10px;
+  transform: scale(1.2);
+}
+
+/* Submit Button */
+.submit {
+  background: #007bff;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  border-radius: 8px;
+  margin-top: 15px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.submit:hover {
+  background: #0056b3;
+}
+
+   /* Restart Quiz  */
+
+.restart-btn {
+  display: inline-block;
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: white;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  margin: auto;
+  position: relative;
+  left: 30%;
+
+}
+
+.restart-btn:hover {
+  background: linear-gradient(135deg, #9e00b3, #004099);
+  transform: translateY(-2px);
+}
+
+.restart-btn:active {
+  transform: scale(0.97);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .quiz {
+    padding: 20px;
+  }
+
+  .quiz h2 {
+    font-size: 18px;
+  }
+
+  .quiz li {
+    padding: 10px;
+  }
+
+  .submit {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .quiz h2{
+    font-size: 16px;
+    font-weight: 800;
+  }
+
+}
